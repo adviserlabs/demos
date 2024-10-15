@@ -24,6 +24,20 @@ mkdir ~/mosek
 vim ~/mosek/mosek.lic   # paste a valid Mosek license in
 ```
 
+### Fenics
+./fenicsDemo.py - Retrieved from the [Fenics/Dolfinx](https://docs.fenicsproject.org/dolfinx/v0.9.0/python/demos/demo_poisson.html) page.
+
+On the server, required:
+
+```bash
+conda create -n fenicsx-env
+conda activate fenicsx-env
+conda env list
+conda install -c conda-forge fenics-dolfinx mpich pyvista
+```
+
+This generates an image locally. Unsure how to convert this into a demo. Probably modify the script to output the PNG/image onto S3 bucket.
+
 ### Starting with the CLI
 This is what David used to get a functional cluster for running Mosek+MKL demos:
 
