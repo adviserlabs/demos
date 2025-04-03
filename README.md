@@ -13,6 +13,12 @@ pip install mkl
 pip install mkl-service
 ```
 
+Example cluster setup command:
+
+```bash
+adviser cluster create --cloud=aws --setup="apt-get update && DEBIAN_FRONTEND=noninteractive apt install -y intel-mkl && pip install mkl mkl-service"
+```
+
 ### Mosek
 ./mosekLinearOptimisation.py - AI wrote this. A simple linear optimisation problem.
 
