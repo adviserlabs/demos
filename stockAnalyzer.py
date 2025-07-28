@@ -203,7 +203,6 @@ def main():
     
     if stocks_data is None:
         print(f"No existing data found. Generating new trading data...")
-        print("Generating Brownian motion data for 500 stocks over 720 days...")
         
         # Generate data
         #stocks_data = generate_brownian_motion_data(2500, 11720, 100.0)
