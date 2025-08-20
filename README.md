@@ -1,8 +1,21 @@
 # Demos
 Demos for Clients, Potential Clients, and Whatever
 
+### Clusters and Jobs Visual Demo
+These are meant to be run while doing `adviser status --watch 1` in some terminal so that you can see
+clusters being built, then jobs being run.
+
+`demoLotsOfClusters.sh` - Creates 6 clusters.
+
+`demoLotsOfJobs.sh` - Creates 6 jobs.
+
+### Stock Analyzer
+`stockAnalyzer.py` - AI wrote this. It has zero dependencies. Creates a bunch of fake tickers, generates trade
+data for the over a long period, then does some analysis on the biggest winners/losers. Outputs charts so
+it actually looks like something.
+
 ### MKL
-./mklSampleProggy.py - AI wrote this. Looks like it does a 500x500 matrix multiplication then 500x500 Eigen decomposition.
+./mklSampleProggy.py` - AI wrote this. Looks like it does a 500x500 matrix multiplication then 500x500 Eigen decomposition.
 
 On the server, required:
 
@@ -20,7 +33,7 @@ adviser cluster create --cloud=aws --setup="apt-get update && DEBIAN_FRONTEND=no
 ```
 
 ### Mosek
-./mosekLinearOptimisation.py - AI wrote this. A simple linear optimisation problem.
+`./mosekLinearOptimisation.py` - AI wrote this. A simple linear optimisation problem.
 
 On the server, required:
 
@@ -31,7 +44,7 @@ vim ~/mosek/mosek.lic   # paste a valid Mosek license in
 ```
 
 ### Fenics
-./fenicsDemo.py - Retrieved from the [Fenics/Dolfinx](https://docs.fenicsproject.org/dolfinx/v0.9.0/python/demos/demo_poisson.html) page.
+`./fenicsDemo.py` - Retrieved from the [Fenics/Dolfinx](https://docs.fenicsproject.org/dolfinx/v0.9.0/python/demos/demo_poisson.html) page.
 
 On the server, required:
 
