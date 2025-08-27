@@ -5,9 +5,9 @@ Demos for Clients, Potential Clients, and Whatever
 These are meant to be run while doing `adviser status --watch 1` in some terminal so that you can see
 clusters being built, then jobs being run.
 
-`demoLotsOfClusters.sh` - Creates 6 clusters.
+`demoLotsOfClusters.sh` - Creates 6 clusters (by default, up to about 40)
 
-`demoLotsOfJobs.sh` - Creates 6 jobs.
+`demoLotsOfJobs.sh` - Creates 6 jobs. Could be easily modified to do many more simultaneously.
 
 ### Stock Analyzer
 `stockAnalyzer.py` - AI wrote this. It has zero dependencies. Creates a bunch of fake tickers, generates trade
@@ -20,7 +20,7 @@ then creates some mock data for binding affinity then generates charts and graph
 TSV in case we wanted to replace it with some actual data?
 
 ### MKL
-./mklSampleProggy.py` - AI wrote this. Looks like it does a 500x500 matrix multiplication then 500x500 Eigen decomposition.
+`./mklSampleProggy.py` - AI wrote this. Looks like it does a 500x500 matrix multiplication then 500x500 Eigen decomposition.
 
 On the server, required:
 
@@ -63,7 +63,7 @@ conda install -c conda-forge fenics-dolfinx mpich pyvista
 This generates an image locally. Unsure how to convert this into a demo. Probably modify the script to output the PNG/image onto S3 bucket.
 
 ### Starting with the CLI
-This is what David used to get a functional cluster for running Mosek+MKL demos:
+This gets a functional cluster for running Mosek+MKL demos:
 
 ```bash
 adviser cluster create --cloud=azure \
