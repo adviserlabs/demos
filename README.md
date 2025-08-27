@@ -14,6 +14,11 @@ clusters being built, then jobs being run.
 data for the over a long period, then does some analysis on the biggest winners/losers. Outputs charts so
 it actually looks like something.
 
+### Protein/Ligand Binding Affinities
+`biomedMolecularDynamicsSim.py` - Another AI-written simulation. Creates a bunch of proteins and ligands and
+then creates some mock data for binding affinity then generates charts and graphs. Data is written into a
+TSV in case we wanted to replace it with some actual data?
+
 ### MKL
 ./mklSampleProggy.py` - AI wrote this. Looks like it does a 500x500 matrix multiplication then 500x500 Eigen decomposition.
 
