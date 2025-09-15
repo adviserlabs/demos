@@ -19,6 +19,9 @@ it actually looks like something.
 then creates some mock data for binding affinity then generates charts and graphs. Data is written into a
 TSV in case we wanted to replace it with some actual data?
 
+### Thermal Lid-Driven Cavity Simulation
+`thermalLidDrivenCavity-MultiThread.py` - Does the simulation. Output is a PNG.
+
 ### MKL
 `./mklSampleProggy.py` - AI wrote this. Looks like it does a 500x500 matrix multiplication then 500x500 Eigen decomposition.
 
