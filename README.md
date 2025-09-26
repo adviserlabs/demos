@@ -1,5 +1,5 @@
 # Demos
-Demos for Clients, Potential Clients, and Whatever
+Demos for clients and potential clients. For complete documentation, see https://github.com/adviserlabs/docs.
 
 ### Clusters and Jobs Visual Demo
 These are meant to be run while doing `adviser status --watch 1` in some terminal so that you can see
