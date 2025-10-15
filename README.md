@@ -4,12 +4,16 @@ complete documentation, see https://github.com/adviserlabs/docs.
 
 # Industry-Specific Demonstrations
 
+## Finance - Stock Ticker Analysis
+
+[Click here for the demo.](Finance-TickerAnalysis/)
+
 ## Quantitative Finance - Backtesting Model Generation
 Runs historical market data through trading strategies on a cluster; outputs
 performance metrics (e.g., Sharpe ratio, drawdowns) to reveal profitable vs.
 risky models.
 
-[Click here for the demo.](Finance-TickerAnalysis/)
+[Click here for the demo.](QuantitativeFinance-BacktestingModelGeneration/)
 
 ## Biomedical Chemistry - Protein/Ligand Binding Affinities
 Simulates molecular docking on GPU clusters; outputs binding energy scores to
