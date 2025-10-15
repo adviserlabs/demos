@@ -4,7 +4,22 @@ complete documentation, see https://github.com/adviserlabs/docs.
 
 # Industry-Specific Demonstrations
 
+## Biomedical Chemistry - Protein/Ligand Binding Affinities
+Simulates molecular docking on GPU clusters; outputs binding energy scores to
+identify drug candidates with strongest target affinity.
+
+[Click here for the demo.](Biomed-MolecularDynamics/)
+
+## Fluid Dynamics (Thermal) - Thermal Lid Driven Cavity
+Simulates heat transfer and fluid flow in a heated cavity with a moving lid on
+parallel CPU/GPU clusters; outputs temperature contours and velocity profiles
+to optimize cooling systems in electronics, engines, or solar panels.
+
+[Click here for the demo.](FluidDynamics-ThermalLidDrivenCavity/)
+
 ## Finance - Stock Ticker Analysis
+Creates a bunch of synthetic tickers, generates trade data for the over a long
+period, then does analysis on the biggest winners/losers.
 
 [Click here for the demo.](Finance-TickerAnalysis/)
 
@@ -14,12 +29,6 @@ performance metrics (e.g., Sharpe ratio, drawdowns) to reveal profitable vs.
 risky models.
 
 [Click here for the demo.](QuantitativeFinance-BacktestingModelGeneration/)
-
-## Biomedical Chemistry - Protein/Ligand Binding Affinities
-Simulates molecular docking on GPU clusters; outputs binding energy scores to
-identify drug candidates with strongest target affinity.
-
-[Click here for the demo.](Biomed-MolecularDynamics/)
 
 ## Climate Science - Global Climate Projections
 Models atmospheric/ocean dynamics over decades on HPC clusters; outputs
@@ -44,13 +53,6 @@ Simulates airflow around vehicles/wings on mesh-based clusters; outputs
 drag/lift coefficients to optimize aircraft fuel efficiency.
 
 [Click here for the demo.](Aerospace-ComputationalFluidDynamics/)
-
-## Fluid Dynamics (Thermal) - Thermal Lid Driven Cavity
-Simulates heat transfer and fluid flow in a heated cavity with a moving lid on
-parallel CPU/GPU clusters; outputs temperature contours and velocity profiles
-to optimize cooling systems in electronics, engines, or solar panels.
-
-[Click here for the demo.](FluidDynamics-ThermalLidDrivenCavity/)
 
 ## Genomics - Genome-Wide Association Studies (GWAS)
 Analyzes millions of genetic variants across samples on distributed clusters;
