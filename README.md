@@ -5,8 +5,9 @@ complete documentation, see https://github.com/adviserlabs/docs.
 # Industry-Specific Demonstrations
 
 ## Biomedical Chemistry - Protein/Ligand Binding Affinities
-Simulates molecular docking on GPU clusters; outputs binding energy scores to
-identify drug candidates with strongest target affinity.
+Small molecule protein binding simulation. Creates proteins and ligands and
+then creates some mock data for binding affinity then generates results in the
+terminal itself.
 
 [Click here for the demo.](Biomed-MolecularDynamics/)
 
