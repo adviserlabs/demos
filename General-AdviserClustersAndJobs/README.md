@@ -9,3 +9,7 @@ clusters being built, then jobs being run.
 `demoAdviserCommandProgress.sh` - A simple command that returns progress % to show job state in `adviser status`.
 
 `demoCondaSetup.sh` - A simple script to set up Conda environment.
+
+## Running the Demonstration
+`bash ./demoLotsOfClusters.sh`
+
