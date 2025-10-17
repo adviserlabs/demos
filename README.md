@@ -59,6 +59,8 @@ drag/lift coefficients to optimize aircraft fuel efficiency.
 Analyzes millions of genetic variants across samples on distributed clusters;
 outputs SNP significance maps to pinpoint disease-linked genes.
 
+[Click here for the demo.](Genomics-AssociationStudies/)
+
 ## Machine Learning/AI - Distributed Neural Network Training
 Trains deep models (e.g., transformers) on massive datasets via parallel GPUs;
 outputs accuracy/loss curves to deploy production-ready AI models.
