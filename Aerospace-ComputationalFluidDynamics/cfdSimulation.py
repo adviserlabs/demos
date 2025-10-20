@@ -7,7 +7,6 @@ and panel method to calculate drag/lift coefficients for aircraft optimization.
 
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.patches import Polygon
 import os
 from datetime import datetime
 

@@ -6,7 +6,6 @@ Parse ligand molecules and extract basic properties
 import sys
 import json
 import csv
-import math
 
 def calculate_molecular_weight(formula):
     """Simple molecular weight calculation from formula"""

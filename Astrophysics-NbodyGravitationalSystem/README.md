@@ -7,5 +7,12 @@ multiprocessing for cluster-parallelization. Runs in ~2 minutes on 64 cores vs
 ~4 hours single-core.
 
 ## Running the Demonstration
-`adviser run "python ./nBodyGravitationalSystem.py"`
+`adviser run "pip install -r requirements.txt && python nBodyGravitationalSystem.py"`
 
+```
+- Launching N-Body Demo: 10,000 particles, 500 steps, 2 cores
+- Computing orbits on cluster...
+- COMPLETE: 128.7s on 2 cores (10,000 particles)
+- SAVED: nbody_data.npz (Load in Jupyter)
+- SAVED: nbody_results.png
+```

@@ -9,7 +9,6 @@ outputs temperature/rainfall maps to predict regional climate change impacts.
 import numpy as np
 import matplotlib.pyplot as plt
 import os
-from datetime import datetime, timedelta
 import json
 
 # Create output directory
