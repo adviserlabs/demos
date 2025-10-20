@@ -1,77 +1,113 @@
-# Demos
-Demos for clients and potential clients. For complete documentation, see https://github.com/adviserlabs/docs.
+# Demonstrations of Adviser's Cloud Compute Tech
+Demos of the Adviser tech simplifying complex simulations and jobs. For
+complete documentation, see https://github.com/adviserlabs/docs.
 
-### Clusters and Jobs Visual Demo
-These are meant to be run while doing `adviser status --watch 1` in some terminal so that you can see
-clusters being built, then jobs being run.
+# Industry-Specific Demonstrations
 
-`demoLotsOfClusters.sh` - Creates 6 clusters (by default, up to about 40)
+## Biomedical Chemistry - Protein/Ligand Binding Affinities
+Small molecule protein binding simulation. Creates proteins and ligands and
+then creates some mock data for binding affinity then generates results in the
+terminal itself.
 
-`demoLotsOfJobs.sh` - Creates 6 jobs. Could be easily modified to do many more simultaneously.
+[Click here for the demo.](Biomed-MolecularDynamics/)
 
-### Stock Analyzer
-`stockAnalyzer.py` - AI wrote this. It has zero dependencies. Creates a bunch of fake tickers, generates trade
-data for the over a long period, then does some analysis on the biggest winners/losers. Outputs charts so
-it actually looks like something.
+## Fluid Dynamics (Thermal) - Thermal Lid Driven Cavity
+Simulates heat transfer and fluid flow in a heated cavity with a moving lid on
+parallel CPU/GPU clusters; outputs temperature contours and velocity profiles
+to optimize cooling systems in electronics, engines, or solar panels.
 
-### Protein/Ligand Binding Affinities
-`biomedMolecularDynamicsSim.py` - Another AI-written simulation. Creates a bunch of proteins and ligands and
-then creates some mock data for binding affinity then generates charts and graphs. Data is written into a
-TSV in case we wanted to replace it with some actual data?
+[Click here for the demo.](FluidDynamics-ThermalLidDrivenCavity/)
 
-### Thermal Lid-Driven Cavity Simulation
-`thermalLidDrivenCavity-MultiThread.py` - Does the simulation. Output is a PNG.
+## Finance - Stock Ticker Analysis
+Creates a bunch of synthetic tickers, generates trade data for the over a long
+period, then does analysis on the biggest winners/losers.
 
-### MKL
-`./mklSampleProggy.py` - AI wrote this. Looks like it does a 500x500 matrix multiplication then 500x500 Eigen decomposition.
+[Click here for the demo.](Finance-TickerAnalysis/)
 
-On the server, required:
+## Quantitative Finance - Backtesting Model Generation
+Runs historical market data through trading strategies on a cluster; outputs
+performance metrics (e.g., Sharpe ratio, drawdowns) to reveal profitable vs.
+risky models.
 
-```bash
-sudo apt-get update
-sudo apt-get install intel-mkl
-pip install mkl
-pip install mkl-service
-```
+[Click here for the demo.](QuantitativeFinance-BacktestingModelGeneration/)
 
-Example cluster setup command:
+## Climate Science - Global Climate Projections
+Models atmospheric/ocean dynamics over decades on HPC clusters; outputs
+temperature/rainfall maps to predict regional climate change impacts.
 
-```bash
-adviser cluster create --cloud=aws --setup="apt-get update && DEBIAN_FRONTEND=noninteractive apt install -y intel-mkl && pip install mkl mkl-service"
-```
+[Click here for the demo.](Climate-GlobalClimateProjections/)
 
-### Mosek
-`./mosekLinearOptimisation.py` - AI wrote this. A simple linear optimisation problem.
+## Astrophysics - N-Body Gravitational System
+Evolves orbits of millions of particles (e.g., galaxies) on parallel clusters;
+outputs collision/formation visuals to study cosmic structure evolution.
 
-On the server, required:
+[Click here for the demo.](Astrophysics-NbodyGravitationalSystem/)
 
-```bash
-pip install mosek
-mkdir ~/mosek
-vim ~/mosek/mosek.lic   # paste a valid Mosek license in
-```
+## Materials Science - Density Functional Theory (DFT)
+Computes electron structures of materials on CPU/GPU clusters; outputs band
+gaps/energy levels to design better semiconductors or catalysts.
 
-### Fenics
-`./fenicsDemo.py` - Retrieved from the [Fenics/Dolfinx](https://docs.fenicsproject.org/dolfinx/v0.9.0/python/demos/demo_poisson.html) page.
+[Click here for the demo.](Materials-DensityFunctionalTheory/)
 
-On the server, required:
+## Fluid Dynamics (Aero) - Computational Fluid Dynamics (CFD)
+Simulates airflow around vehicles/wings on mesh-based clusters; outputs
+drag/lift coefficients to optimize aircraft fuel efficiency.
 
-```bash
-conda create -n fenicsx-env
-conda activate fenicsx-env
-conda env list
-conda install -c conda-forge fenics-dolfinx mpich pyvista
-```
+[Click here for the demo.](Aerospace-ComputationalFluidDynamics/)
 
-This generates an image locally. Unsure how to convert this into a demo. Probably modify the script to output the PNG/image onto S3 bucket.
+## Genomics - Genome-Wide Association Studies (GWAS)
+Analyzes millions of genetic variants across samples on distributed clusters;
+outputs SNP significance maps to pinpoint disease-linked genes.
 
-### Starting with the CLI
-This gets a functional cluster for running Mosek+MKL demos:
+[Click here for the demo.](Genomics-AssociationStudies/)
 
-```bash
-adviser cluster create --cloud=azure \
-    --setup="mkdir ~/mosek ; mv mosek.lic ~/mosek/ \
-             && sudo apt-get update \
-             && sudo DEBIAN_FRONTEND=\"noninteractive\" apt-get -y install intel-mkl \
-             && pip install -r requirements.txt"
-```
+## Machine Learning/AI - Distributed Neural Network Training
+Trains deep models (e.g., transformers) on massive datasets via parallel GPUs;
+outputs accuracy/loss curves to deploy production-ready AI models.
+
+## Drug Discovery - Virtual High-Throughput Screening
+Docks millions of compounds against targets on cloud clusters; outputs hit
+lists (affinity scores) to prioritize lab-tested drug leads.
+
+## Seismology - Earthquake Wave Propagation
+Models seismic waves through Earth layers on finite-element clusters; outputs
+ground motion maps to forecast building damage in quake zones.
+
+## Structural Engineering - Finite Element Analysis (FEA)
+Simulates stress/strain on bridges/buildings under loads on parallel solvers;
+outputs deformation/failure points to ensure structural safety.
+
+## Particle Physics - Monte Carlo Event Generation
+Simulates particle collisions (e.g., LHC data) on massive clusters; outputs
+decay/event distributions to validate theories like Higgs boson.
+
+## Monte Carlo - Markov Chain Generation
+Generates millions of samples from complex probability distributions on
+parallel clusters; outputs posterior parameter estimates and uncertainty bands
+to quantify beliefs about models (e.g., disease spread rates or climate
+sensitivity).
+
+### Epidemiology - MCMC Disease Modeling
+Modeling Infection rate (R0) for "Optimal quarantine duration"
+
+### Climate Science - MCMC Parameter Estimation
+Modweling CO2 sensitivity for "Price carbon tax accurately"
+
+### Finance - MCMC Portfolio Optimization
+Modeling Volatility correlations for "Hedge fund risk budget"
+
+### Genomics - MCMC Phylogenetics
+Modeling Mutation rates for "virus evolution"
+
+## Operations Research - Large-Scale Optimization
+Solves supply chain/inventory problems via parallel MIP solvers; outputs
+optimal routes/costs to minimize logistics expenses for enterprises.
+
+## Bioinformatics - Protein Structure Prediction
+Folds amino acid sequences using distributed AlphaFold-like models; outputs 3D
+PDB files to reveal functional protein shapes for drug design.
+
+## Environmental Engineering - Pollutant Dispersion Modeling
+Tracks chemical plumes in air/water on advection-diffusion clusters; outputs
+concentration maps to plan urban emission controls and health risks.
+
